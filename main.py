@@ -9,8 +9,7 @@ from mlxtend.frequent_patterns import apriori, association_rules
 # ----------------------------------------------------------
 # 1. Завантаження та попередня обробка даних
 # ----------------------------------------------------------
-# Файл містить колонки: Member_number, Date, itemDescription
-df = pd.read_csv('Groceries_dataset.csv')  # Замість 'Groceries_dataset.csv' вкажіть свій файл
+df = pd.read_csv('Groceries_dataset.csv')
 
 # Видаляємо порожні рядки (якщо є)
 df.dropna(how='all', inplace=True)
